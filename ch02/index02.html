@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 실습</title>
+    
+    <!-- 외부 스타일 시트 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <!-- 내부 스타일 시트 -->
+    <style>
+        h1 {
+            color: darkgreen;
+            text-align: center;
+        }
+        
+        p {
+            font-size: 30px;
+        }
+        </style>
+</head>
+<body>
+    <!-- CSS 인라인 스타일로 적용 -->
+    <h1 style="margin-top: 200px;">Tenco Online에 오신 것을 환영합니다!</h1>
+    <img src="img/sample.png" alt="샘플 이미지" id="sample-img">
+    <p>버튼을 눌러 메시지를 변경해보세요.</p>
+    <button onclick="changeMessage()">메시지 변경</button>
+    <!-- 자바 스크립트 -->
+    <script src="js/script.js"></script>
+</body>
+</html>
