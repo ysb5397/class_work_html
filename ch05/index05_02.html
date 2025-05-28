@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>body 태그 예제</title>
+</head>
+<body>
+    <h2>학생 점수 관리 시스템</h2>
+    <p>아래는 학생들의 점수를 정리한 표입니다.</p>
+
+    <!-- 1. table: 표를 생성(thead, tbody, tr, th, td를 사용 가능)-->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>국어</th>
+                <th>영어</th>
+                <th>수학</th>
+                <th>총점</th>
+                <th>평균</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>홍길동</td>
+                <td>90</td>
+                <td>80</td>
+                <td>70</td>
+                <td>240</td>
+                <td>80.0</td>
+            </tr>
+            <tr>
+                <td>김철수</td>
+                <td>80</td>
+                <td>70</td>
+                <td>60</td>
+                <td>210</td>
+                <td>70.0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 2. form 태그와 input 태그 -->
+    <h3>학생 정보 입력</h3>
+    <form action="/submit" method="post">
+        <!-- input 태그 : 텍스트 입력 필드 -->
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="user_name222" placeholder="이름을 입력하세요.">
+        
+        <!-- input 태그: 숫자 입력 필드 -->
+        <label for="kor">국어 점수:</label>
+        <input type="number" id="kor" name="kor222" placeholder="국어 점수를 입력하세요." min="0" max="100">
+        <button type="submit">등록</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table colspan & rowspan</title>
+    
+    <!-- 내부 스타일 시트-->
+    <style>
+        * {
+            text-align: center;
+        }
+
+        table {
+            width: auto;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>시간표 예제</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>시간</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00~10:00</td>
+                <!-- 열 두개를 합친 코드 -->
+                <td colspan="2">HTML, CSS</td>
+                <td rowspan="3">자습</td>
+            </tr>
+            <tr>
+                <td>10:00~11:00</td>
+                <td>JS 수업</td>
+                <td rowspan="2">프로젝트 작업</td>
+            </tr>
+            <tr>
+                <td>11:00~12:00</td>
+                <td>JS 실습</td>
+            </tr>
+    </table>
+</body>
+</html>
