@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 클래스 속성 값 container의 모든 자손인 p 태그의 글자 색을 파란색으로 표시 */
+      .container p {
+        color: blue;
+      }
+
+      /* 클래스 속성 값 container의 직계 자손 p 태그의 글자를 굵게 표시 */
+      .container > p {
+        font-weight: bold;
+      }
+
+      /* h2 바로 뒤 p태그를 선택해서 배경 색상을 노란색으로 표시 */
+      h2 + p {
+        background-color: yellow;
+      }
+
+      /* h2 뒤 모든 p 태그를 선택해서 폰트 사이즈를 20px로 표시 */
+      h2 ~ p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>컨테이너 제목</h3>
+      <p>컨테이너 내용 1</p>
+      <span>
+        <p>컨테이너 내용 2</p>
+      </span>
+    </div>
+
+    <h2>제목</h2>
+    <p>문단A</p>
+    <p>문단B</p>
+    <div>다른 박스</div>
+    <p>문단C</p>
+  </body>
+</html>

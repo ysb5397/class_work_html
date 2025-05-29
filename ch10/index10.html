@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 자손 선택자 -->
+     <style>
+        h1 p {
+            color: red;
+        }
+
+        /* 인접 형제 선택자 */
+        h1 + p {
+            color: blue;
+        }
+
+        /* 일반 형제 선택자 */
+        h1 ~ p {
+            color: green;
+        }
+
+        /* 자식 선택자 */
+        div > p {
+            color: rgb(255, 166, 0);
+        }
+     </style>
+</head>
+<body>
+    <p>가나다라</p>
+    <h1>여기는 h1</h1>
+    <p>가나다라</p>
+    <p>가나다라</p>
+    <p>가나다라</p>
+    <div>
+        <p>1334324</p>
+    </div>
+</body>
+</html>
