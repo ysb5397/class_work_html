@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 선택자 연습</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        button:hover {
+            border: 2px solid orangered;
+            background-color: orangered;
+            color: white;
+        }
+
+        input:focus {
+            border: 2px solid orangered;
+            color: orangered;
+            /* outline을 none으로 해야 border가 작동된다. */
+            outline: none;
+        }
+
+        /* 리스트의 첫번째 항목을 선택해서 배경 색상으로 초록색으로 바꾸기 */
+        .item-list li:first-child {
+            background-color: green;
+        }
+
+        /* 리스트의 마지막 항목을 선택해서 배경 색상으로 노란색으로 바꾸기 */
+        .item-list li:last-child {
+            background-color: yellow;
+        }
+
+        /* 리스트 항목 중에 홀수번째 항목을 선택해서 font size를 20px로 굵게 바꾸기 */
+        .item-list li:nth-child(odd) {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* 리스트 항목 중에 짝수번째 항목을 선택해서 font size를 15px로 굵게 바꾸기 */
+        .item-list li:nth-child(even) {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <button>버튼을 눌러주세요</button>
+    <input type="text" name="" id="" placeholder="여기에 값을 입력하세요.">
+    <ul class="item-list">
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4</li>
+        <li>리스트5</li>
+    </ul>
+</body>
+</html>
