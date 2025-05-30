@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델의 이해 1</title>
+    <!-- 내부 스타일 시트 -->
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* 요소 크기를 계산하는 기준 방식은 여러가지 */
+            /* 기본값 */
+            box-sizing: content-box;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(255, 115, 0);
+        }
+
+        .box {
+            padding: 20px;
+        }
+
+        .box {
+            border: 5px solid rgb(0, 0, 0);
+        }
+
+        .box {
+            margin: 10px;
+        }
+     </style>
+</head>
+<body>
+    <div class="box">div 태그 1 박스 모델</div>
+    <div>div 태그 2</div>
+    <div>
+        <pre>
+            요소 크기 계산해보기
+            전체 너비 = width + 좌우 padding + 좌우 border + 좌우 margin
+            전체 높이 = height + 상하 padding + 상하 border + 상하 margin
+
+            - 박스 모델 크기를 계산하는 기준
+            box-sizing: content-box 기준(기본값)
+            width: 200px; 값을 준다면 컨텐츠만 지정되는 개념
+        </pre>
+    </div>
+</body>
+</html>

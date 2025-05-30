@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소 최대 너비와 최대 높이 속성</title>
+    <style>
+        *, *::before, *::after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background-color: rgb(51, 105, 0);
+            padding: 20px;
+            /* 위아래, 좌우 */
+            margin: 20px auto;
+        }
+
+        .box {
+            /* 최대 높이 지정 */
+            max-height: 200px;
+            padding: 10px;
+            background-color: rgb(77, 127, 201);
+            /* 내용이 넘치면 자동으로 스크롤 생성 */
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>max-width 예제</h2>
+        <p>이 컨테이너는 최대 너비 500px로 제한합니다. 창 크기를 조절해보세요.</p>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h2>max-height 예제</h2>
+            <p>이 박스는 최대 높이 200px로 제한합니다. 내용이 많아지면 자동으로 스크롤이 생깁니다.</p>
+            <p>더 많은 텍스트를 추가해서 확인해봅시다.</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsam facere iure in, molestiae cumque ut suscipit, et tenetur minus quam! Dolorum reprehenderit, necessitatibus temporibus nihil facilis cupiditate repellendus laborum.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem dolores assumenda, voluptatum omnis sequi quam quis totam? Quisquam, dignissimos. Iste nihil exercitationem accusamus. Ipsam tempore rem atque distinctio laborum cupiditate.
+            Aliquam sit, sint saepe, ut impedit pariatur eius rerum at reprehenderit atque dignissimos maxime dolores. Quos neque ea asperiores voluptatibus sit. Illum, minus quis neque mollitia rerum dolore? Nobis, incidunt!
+            Optio quae mollitia cum, eligendi dignissimos molestiae quasi fugiat molestias necessitatibus quos consequatur impedit explicabo, sed veritatis adipisci magnam corrupti voluptates? Blanditiis pariatur facere earum dolor sint ut quae dolores.
+            Earum, atque. Molestiae explicabo laborum saepe porro, perferendis debitis optio necessitatibus impedit, reiciendis corrupti eaque corporis maxime, ipsum iste. Animi quasi vero atque saepe natus perspiciatis excepturi nobis ut repudiandae.
+            Quibusdam deleniti eligendi adipisci impedit eveniet cupiditate perspiciatis nihil corporis deserunt minima vel doloribus, maiores dolorem rerum debitis maxime labore modi dignissimos, sit repellat id tempora nisi tempore non. Pariatur.
+            Eaque repellat dolorum sed. Atque adipisci earum deleniti consequuntur consequatur quidem blanditiis, illum doloribus a? Maxime natus aut asperiores fugit quam quisquam commodi veritatis quaerat hic accusamus sunt, possimus expedita.
+            Eos, praesentium, animi fugit ratione reprehenderit inventore pariatur iure quas atque earum repudiandae! Obcaecati vel dolorum cupiditate. Consectetur vel voluptatibus incidunt dolores, veritatis ea nesciunt. Quidem cumque harum quibusdam accusantium.
+            Nostrum debitis, ratione quam laborum incidunt magnam rem libero! Similique quis recusandae aliquid natus quisquam. Quaerat sed, laboriosam est iusto, labore possimus aut commodi mollitia officia corrupti, quam nemo deleniti!
+            Quasi optio laudantium, est at delectus facilis. Possimus, cum sequi provident deserunt doloribus consequatur consequuntur delectus maxime asperiores. Laborum tempore voluptatem expedita reiciendis placeat, autem laudantium velit debitis quaerat ratione.
+            Sapiente, facilis accusamus, mollitia autem libero ipsum sint voluptatum voluptates aliquid porro nihil? Nesciunt sint ullam sed? Quis nam totam ex neque quaerat! Nobis nesciunt velit a debitis commodi quisquam.
+        </div>
+    </div>
+</body>
+</html>
