@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 vs 블록 vs 인라인-블록</title>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            border: 2px, solid, #333;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        /* 1. inline 요소는 크기를 늘릴 수 없다. */
+        .inline {
+            display: inline;
+            width: 100px;
+            height: 100px;
+            /* margin은 좌우만 적용 */
+            margin: 20px;
+            /* 좌우는 적용이 가능하지만 상하는 제한적이다. */
+            padding: 0 50px;
+        }
+
+        /* 2. block 요소는 크기를 늘릴 수 있다. 다만, 옆으로 붙일 수 없다. */
+        .block {
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3>1. inline 요소</h3>
+    <div class="box inline">box1</div>
+    <div class="box inline">box2</div>
+    <div class="box inline">box3</div>
+
+    <h3>2. block 요소</h3>
+    <div class="box block">box1</div>
+    <div class="box block">box2</div>
+    <div class="box block">box3</div>
+
+    <h3>3. inline-block 요소</h3>
+    <div class="box inline-block">box1</div>
+    <div class="box inline-block">box2</div>
+    <div class="box inline-block">box3</div>
+
+    <br>
+    <h3>span 요소</h3>
+    <span style="color: aqua; font-weight: bold;">반가워</span>&nbsp;
+    <span>반가워</span>
+</body>
+</html>
