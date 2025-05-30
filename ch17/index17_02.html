@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            padding: 40px;
+            font-family: 'Courier New', Courier, monospace;
+            position: static;
+        }
+
+        .gallery {
+            width: 400px;
+            height: 300px;
+            border: 2px solid #333;
+            /* relative나 absolute가 없다면 박스 밖으로 벗어난다. */
+            position: relative;
+            overflow: scroll;
+        }
+
+        .photo-card {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #666;
+            background: #fff;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .card1 {
+            top: 20px;
+            left: 20px;
+            background-color: #ffccbc;
+            z-index: 1;
+        }
+
+        .card2 {
+            top: 50px;
+            left: 100px;
+            background-color: #ccffcc;
+            z-index: 2;
+        }
+
+        .card3 {
+            top: 80px;
+            left: 180px;
+            background-color: #ffccff;
+            z-index: 3;
+        }
+
+        .card4 {
+            top: 1px;
+            left: 1px;
+            background-color: #ccffff;
+            z-index: 4;
+        }
+    </style>
+</head>
+<body>
+    <h2>나만의 포토 갤러리</h2>
+    <div class="gallery">
+        <div class="photo-card card1">사진1</div>
+        <div class="photo-card card2">사진2</div>
+        <div class="photo-card card3">사진3</div>
+        <div class="photo-card card4">사진4</div>
+    </div>
+</body>
+</html>
