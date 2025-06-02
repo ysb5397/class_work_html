@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgb(154, 154, 216);
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        .box1 {
+            background-color: aquamarine;
+            float: left;
+        }
+
+        .box2 {
+            background-color: rgb(238, 130, 238);
+            float: left;
+            /* clear 속성 추가
+               float 된 요소의 영향을 정리하여 float 된 요소 아래도
+               이동 처리하고, 더 이상 주변 요소에 영향을 주지 않도록 처리한다.
+               clear left 왼쪽 정리, clear right 오른쪽 정리, clear both 양쪽 정리 개념이다. 
+            */
+            clear: left;
+        }
+
+        .box3 {
+            background-color: rgb(240, 128, 128);
+            float: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</body>
+</html>
