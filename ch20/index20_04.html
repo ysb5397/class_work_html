@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 교차축 방향에 대한 정렬 기법 */
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* 교차축 방향 정렬
+               tip. 주축 방향은 기본적으로 화면에 끝까지 차지할 수 있는 영역이 자동 생성됨 
+            */
+            height: 400px;
+            align-items: flex-end;
+            border: 1px solid aquamarine;
+            padding: 10px;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 255, 136);
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- item class를 가진 div 12개 생성 -->
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>

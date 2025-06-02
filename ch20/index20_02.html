@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            margin: 5px;
+            border: 2px solid blueviolet;
+            text-align: center;
+            color: tomato;
+        }
+
+        .container {
+            display: flex;
+            /* 기본값 row */
+            flex-direction: row;
+            margin-bottom: 20px;
+            
+        }
+
+        .container.column {
+            background-color: aquamarine;
+            /* 주축 방향을 column으로 변경 */
+            flex-direction: column;
+        }
+
+        .container.row-reverse {
+            flex-direction: row-reverse;
+        }
+    </style>
+  </head>
+  <body>
+    <h3>row</h3>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>column</h3>
+    <div class="container column">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>row-reverse</h3>
+    <div class="container row-reverse">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>
