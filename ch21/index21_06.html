@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px solid brown;
+            padding: 10px;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 253, 126);
+            margin: 5px;
+            border: 2px solid palevioletred;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* flex 단축 속성 */
+        .item1 {
+            flex: 1;
+        }
+
+        .item2 {
+            flex: 2;
+        }
+
+        .item3 {
+            flex: 2 2 100px;
+        }
+        /* 
+            flex: 1 단축 속성은
+            1. flex grow : 1 (기본값이자 설정한 값)
+            2. flex shrink : 1 (기본값)
+            3. flex basis : 0 (기본값)
+
+            flex: 2 단축 속성은
+            1. flex grow : 2 (설정한 값)
+            2. flex shrink : 1 (기본값)
+            3. flex basis : 0 (기본값)
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+</body>
+</html>
