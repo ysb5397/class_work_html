@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function test() {
+        (async () => {
+            let response = await fetch("./test.xml");
+            let data = await response.text();
+
+            let parseXML = new DOMParser();
+            let xmlDoc = parseXML.parseFromString(data, "text/xml");
+
+            let arr = new Array();
+            let member = xmlDoc.getElementsByTagName("member");
+            for (let member_node of member) {
+                for (let childe_node of member_node.children) {
+                    arr.push(childe_node.textContent);
+                }
+            }
+            console.log(arr);
+        })();
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="test()">Click</button>
+  </body>
+</html>
