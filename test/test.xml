@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
+    <header>
+        <code>100</code>
+    </header>
     <member>
         <name>멤버1</name>
         <age>2</age>

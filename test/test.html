@@ -23,9 +23,24 @@
             console.log(arr);
         })();
       }
+
+      function test1() {
+        (async () => {
+            let response = await fetch("./test.xml");
+            let data = await response.text();
+
+            let parseXML = new DOMParser();
+            let xmlDoc = parseXML.parseFromString(data, "text/xml");
+
+            let arr = new Array();
+            let header = xmlDoc.getElementsByTagName("header");
+            
+            console.log(header[0].textContent);
+        })();
+      }
     </script>
   </head>
   <body>
-    <button onclick="test()">Click</button>
+    <button onclick="test1()">Click</button>
   </body>
 </html>
