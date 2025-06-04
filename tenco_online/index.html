@@ -17,11 +17,13 @@
     <!-- 아이폰용 fabicon 설정 -->
     <link rel="apple-touch-icon" href="img/tencoding_favicon.png" />
     <!-- 인터넷 익스플로러용 fabicon 설정-->
-    <link rel="short icon" type="image/x-icon" href="img/fun-coding.ico" />
+    <!-- <link rel="short icon" type="image/x-icon" href="img/fun-coding.ico" /> -->
 
     <!-- CSS Reset(1), style.css, 아이콘 폰트, 웹페이지 사용 폰트 -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="js/main.js" defer></script>
 
     <!-- 폰트는 각 사용자 PC에 해당 폰트가 설치 되어 있어야 함 -->
     <!-- 웹 폰트는 각 사용자의 PC에 폰트가 없어도 웹 브라우저에서 폰트를 
@@ -33,6 +35,14 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;0,700;0,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <!-- 항상 화면을 100% 로 사용하면, 와이드 스크린에서 웹페이지가 기대와 달리 보일 수 있음 -->
@@ -61,5 +71,140 @@
         </div>
       </div>
     </header>
+
+    <!-- 메인 이미지 섹션 -->
+    <!-- 화면 100% 크기 차지하게 설정 -->
+    <section class="main">
+      <div class="main--container">
+        <div class="inner">
+          <div class="title--container">
+            <div class="title">주도적인 학습에 집중합니다.</div>
+            <div class="message">
+              스스로 문제를 해결하는 능력<br />
+              찾아서 학습하는 능력<br />
+              스스로 재미를 찾아 내는 능력<br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 스킬 섹션 영역 -->
+    <section>
+      <div class="inner">
+        <div class="skill--container">
+          <div class="skill">
+            <i class="fa-brands fa-java skill--icon"></i>
+            <div class="skill--title">
+              <div class="skill--name">백엔드</div>
+              <div class="skill--usage">ERP/WEB/APP</div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <i class="fa-solid fa-mobile skill--icon"></i>
+            <div class="skill--title">
+              <div class="skill--name">백엔드</div>
+              <div class="skill--usage">ERP/WEB/APP</div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <i class="fa-solid fa-database skill--icon"></i>
+            <div class="skill--title">
+              <div class="skill--name">백엔드</div>
+              <div class="skill--usage">ERP/WEB/APP</div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <i class="fa-brands fa-python skill--icon"></i>
+            <div class="skill--title">
+              <div class="skill--name">백엔드</div>
+              <div class="skill--usage">ERP/WEB/APP</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 로드맵 섹션 1 (카드 레이아웃 만들어보기) -->
+    <section>
+      <div class="inner">
+        <!-- 상단 -->
+        <div class="roadmap--container">
+          <div class="roadmap--title--container">
+            <div class="roadmap--title">블로그 및 서적</div>
+            <div class="arrow--container">
+              <i class="fa-solid fa-circle-left slide--pre" onclick="clickLeft()"></i>
+              <i class="fa-solid fa-circle-right slide--next" onclick="clickRight()"></i>
+            </div>
+          </div>
+        </div>
+        <!-- 하단 -->
+         <ul class="class--list" id="0">
+          <li class="class--card">
+            <img src="https://picsum.photos/id/129/300/300" alt="샘플 이미지">
+            <a href="https://www.google.com" target="_blank">
+              <div class="class--container">
+                <div class="class--skill">
+                  <div class="class--type">학습방법</div>
+                  <div class="class--format">블로그</div>
+                </div>
+                <div class="class--desc">
+                  <div class="class--title">IT는 배우는 방법을 익혀야 합니다.</div>
+                  <div class="class--detail">IT를 배우는 전략</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="class--card">
+            <img src="https://picsum.photos/id/104/300/300" alt="샘플 이미지">
+            <a href="https://www.google.com" target="_blank">
+              <div class="class--container">
+                <div class="class--skill">
+                  <div class="class--type">학습방법</div>
+                  <div class="class--format">블로그</div>
+                </div>
+                <div class="class--desc">
+                  <div class="class--title">IT는 배우는 방법을 익혀야 합니다.</div>
+                  <div class="class--detail">IT를 배우는 전략</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="class--card">
+            <img src="https://picsum.photos/id/89/300/300" alt="샘플 이미지">
+            <a href="https://www.google.com" target="_blank">
+              <div class="class--container">
+                <div class="class--skill">
+                  <div class="class--type">학습방법</div>
+                  <div class="class--format">블로그</div>
+                </div>
+                <div class="class--desc">
+                  <div class="class--title">IT는 배우는 방법을 익혀야 합니다.</div>
+                  <div class="class--detail">IT를 배우는 전략</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="class--card">
+            <img src="https://picsum.photos/id/371/300/300" alt="샘플 이미지">
+            <a href="https://www.google.com" target="_blank">
+              <div class="class--container">
+                <div class="class--skill">
+                  <div class="class--type">학습방법</div>
+                  <div class="class--format">블로그</div>
+                </div>
+                <div class="class--desc">
+                  <div class="class--title">IT는 배우는 방법을 익혀야 합니다.</div>
+                  <div class="class--detail">IT를 배우는 전략</div>
+                </div>
+              </div>
+            </a>
+          </li>
+         </ul>
+      </div>
+    </section>
   </body>
 </html>

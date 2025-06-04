@@ -43,7 +43,7 @@ a:hover {
 header {
     width: 100%;
     height: 60px;
-    background-color: orange;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     top: 0;
     left: 0;
@@ -67,5 +67,217 @@ header {
 
 .head--container .head--brand a:hover {
     color: blue;
+    transition-duration: 0.5s;
     cursor: pointer;
+}
+
+section {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.main {
+    height: 360px;
+    background-image: url("https://cdn.pixabay.com/photo/2019/04/26/07/14/store-4156934_1280.png");
+    background-repeat: no-repeat;
+    /* x축, y축 */
+    background-position: center 20%;
+    background-size: cover;
+    z-index: 1;
+}
+
+.main--container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(26, 26, 26);
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.title--container {
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.8rem;
+}
+
+.message {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: white;
+    line-height: 2rem;
+}
+
+.skill--container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    gap: 10px;
+}
+
+.skill {
+    width: 15%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    border: 1px solid #adadad;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    /* x, y, blur-radius, color */
+    box-shadow: 3px 3px 5px rgb(170, 170, 170);
+    min-width: 200px;
+}
+
+.skill:hover {
+    transform: translate(0, -5px);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.skill--icon {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #3099c2
+}
+
+.skill--title {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.skill--name {
+    font-size: 0.9rem;
+    color: #545e6f;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+}
+
+.skill--usage {
+    font-size: 0.8rem;
+    color: #545e6f;
+}
+
+.roadmap--container {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.roadmap--title--container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    align-items: center;
+}
+
+.rodmap--title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #545e6f;
+}
+
+.slide--pre {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #cfd8dc;
+}
+
+.slide--pre:hover {
+    color: #5d6163;
+}
+
+.slide--next {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #cfd8dc;
+    margin-left: 10px;
+}
+
+.slide--next:hover {
+    color: #5d6163;
+}
+
+/* ul 태그 스타일 초기화 */
+ul {
+    list-style: none;
+}
+
+.class--list {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.class--list[id = 1] {
+    right: 10px;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #e3e3e3;
+}
+
+a {
+    cursor: pointer;
+}
+
+.class--card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.class--card:hover {
+    transform: scale(1.04);
+    transition-duration: 0.3s;
+}
+
+.class--container {
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #e3e3e3;
+}
+
+.class--skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.class--type {
+    font-weight: bold;
+}
+
+.class--format {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgb(255, 102, 0);
+    border: 1px solid rgb(255, 134, 53);
+    border-radius: 20px;
+    padding: 5px 7px;
+}
+
+.class--desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* 미디어 쿼리 사용 */
+@media (min-width: 1200px) {
+    /* 화면의 크기가 1200px 이상이라면 */
+    .inner {
+        max-width: 1200px;
+    }
 }
