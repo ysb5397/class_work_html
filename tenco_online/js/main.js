@@ -2,13 +2,15 @@ var cardNums;
 var currentPos;
 
 function clickLeft() {
-    currentPos = document.getElementsByClassName("class--list").item(0).id;
-    
+    var doc = document.getElementsById("").item(0);
+    currentPos = 
+
+    alert(currentPos);
     // if (currentPos != cardNums) {
 
     // }
 }
 
 function clickRight() {
-
+    alert("right");
 }

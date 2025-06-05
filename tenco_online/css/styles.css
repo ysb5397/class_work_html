@@ -242,6 +242,7 @@ a {
 }
 
 .class--container {
+    margin-top: 5px;
     border: 1px solid #e3e3e3;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #e3e3e3;
@@ -274,10 +275,39 @@ a {
     padding: 10px;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ebebeb;
+    background-color: #f7f7f7;
+    margin-top: 20px;
+    padding: 20px 20px;
+}
+
+.footer--message {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 /* 미디어 쿼리 사용 */
 @media (min-width: 1200px) {
     /* 화면의 크기가 1200px 이상이라면 */
     .inner {
         max-width: 1200px;
+    }
+}
+
+@media (max-width: 979px) {
+    .skill--container {
+        display: none;
+    }
+
+    .class--img {
+        max-width: 150px;
+    }
+
+    .class--container {
+        font-size: 60%;
     }
 }
