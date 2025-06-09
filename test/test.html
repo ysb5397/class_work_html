@@ -38,9 +38,41 @@
             console.log(header[0].textContent);
         })();
       }
+
+      let doc;
+      let keyNumber = 1;
+      function test2() {
+        while(true) {
+          keyNumber = document.getElementById('num').value;
+
+          doc = {
+            id: "test",
+            name: "홍길동"
+          }
+
+          doc = JSON.stringify(doc);
+          localStorage.setItem(keyNumber, doc);
+
+          doc = localStorage.getItem(keyNumber);
+          doc = JSON.parse(doc);
+
+          let testNumber = localStorage.key(2);
+
+          // localStorage.key는 키가 있는지 없는지 확인해줌
+          alert(testNumber);
+          console.log(testNumber);
+
+          if (doc !== null) {
+            console.log(doc);
+            break;
+          }
+        }
+      }
     </script>
   </head>
   <body>
     <button onclick="test1()">Click</button>
+    <button onclick="test2()">테스트</button>
+    <input type="number" placeholder="숫자를 입력해주세요" id="num">
   </body>
 </html>
